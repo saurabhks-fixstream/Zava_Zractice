@@ -8,25 +8,16 @@ public class BinaryTreeInorderTraversal {
 
     public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<Integer>();
-        if (root == null) {
-            return list;
-        }
-        Stack<TreeNode> s = new Stack<TreeNode>();
+        Stack<TreeNode> stack = new Stack<TreeNode>();
         TreeNode curr = root;
-        boolean done = false;
-        while (!done) {
-            if (curr != null) {
-                s.push(curr);
+        while (curr != null || !stack.isEmpty()) {
+            while (curr != null) {
+                stack.push(curr);
                 curr = curr.left;
-            } else {
-                if (s.isEmpty()) {
-                    done = true;
-                } else {
-                    curr = s.pop();
-                    list.add(curr.val);
-                    curr = curr.right;
-                }
             }
+            curr = stack.pop();
+            list.add(curr.val);
+            curr = curr.right;
         }
         return list;
     }
