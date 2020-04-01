@@ -5,29 +5,16 @@ public class BalancedBinaryTree {
     private static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
-        } else {
-            int lDepth = maxDepth(root.left);
-            int rDepth = maxDepth(root.right);
-            if (lDepth > rDepth) {
-                return lDepth + 1;
-            } else {
-                return rDepth + 1;
-            }
         }
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
     public static boolean isBalanced(TreeNode root) {
         if (root == null) {
             return true;
         }
-        int lDepth = maxDepth(root.left);
-        int rDepth = maxDepth(root.right);
-        int diff = Math.abs(lDepth - rDepth);
-        if (diff <= 1) {
-            return isBalanced(root.left) && isBalanced(root.right);
-        } else {
-            return false;
-        }
+        return Math.abs(maxDepth(root.right) - maxDepth(root.left)) <= 1 && isBalanced(root.left)
+               && isBalanced(root.right);
     }
 
     public static void main(String[] args) {
