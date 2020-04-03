@@ -5,15 +5,8 @@ public class MaximumDepthofBinaryTree {
     public static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
-        } else {
-            int left = maxDepth(root.left);
-            int right = maxDepth(root.right);
-            if (left <= right) {
-                return right + 1;
-            } else {
-                return left + 1;
-            }
         }
+        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
     }
 
     public static void main(String[] args) {
