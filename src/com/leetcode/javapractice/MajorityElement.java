@@ -1,28 +1,21 @@
 package com.leetcode.javapractice;
 
-import java.util.HashMap;
-
 public class MajorityElement {
 
     public static int majorityElement(int[] nums) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-        int majority = Integer.MIN_VALUE;
-        int element = Integer.MIN_VALUE;
-        for (int i = 0; i < nums.length; i++) {
-            if (!map.containsKey(nums[i])) {
-                map.put(nums[i], 1);
-            } else {
-                map.put(nums[i], (map.get(nums[i]) + 1));
-            }
+        if (nums.length == 0) {
+            return 0;
         }
-        for (int i : map.keySet()) {
-            int value = map.get(i);
-            if (value >= majority) {
-                majority = value;
-                element = i;
+        int count = 0;
+        int candidate = nums[0];
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
             }
+            count += (num == candidate) ? 1
+                                        : -1;
         }
-        return element;
+        return candidate;
     }
 
     public static void main(String[] args) {
