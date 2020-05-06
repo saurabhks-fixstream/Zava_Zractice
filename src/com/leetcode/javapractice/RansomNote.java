@@ -1,25 +1,17 @@
 package com.leetcode.javapractice;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class RansomNote {
 
     public static boolean canConstruct(String ransomNote, String magazine) {
-        Map<Character, Integer> map = new HashMap<Character, Integer>();
-        for (int i = 0; i < magazine.length(); i++) {
-            if (!map.containsKey(magazine.charAt(i))) {
-                map.put(magazine.charAt(i), 1);
-            } else {
-                map.put(magazine.charAt(i), (map.get(magazine.charAt(i)) + 1));
-            }
+        char[] letters = new char[26];
+        for (char m : magazine.toCharArray()) {
+            letters[m - 'a']++;
         }
-        for (int i = 0; i < ransomNote.length(); i++) {
-            if (!map.containsKey(ransomNote.charAt(i)) || map.get(ransomNote.charAt(i)) == 0) {
+        for (char r : ransomNote.toCharArray()) {
+            if (letters[r - 'a'] < 1) {
                 return false;
-            } else {
-                map.put(ransomNote.charAt(i), (map.get(ransomNote.charAt(i)) - 1));
             }
+            letters[r - 'a']--;
         }
         return true;
     }
