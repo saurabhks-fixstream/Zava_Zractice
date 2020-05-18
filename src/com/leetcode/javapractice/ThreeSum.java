@@ -8,36 +8,32 @@ public class ThreeSum {
 
     public static List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
-        if (nums.length < 3) {
-            return list;
-        }
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            int low = i + 1;
-            int high = nums.length - 1;
-            int target = -nums[i];
-            while (low < high) {
-                if (nums[low] + nums[high] == target) {
-                    list.add(Arrays.asList(nums[i], nums[low], nums[high]));
-                    low++;
-                    high--;
-                    while (low < high && nums[low] == nums[low - 1]) {
-                        low++;
+        List<List<Integer>> result = new ArrayList<List<Integer>>();
+        for (int i = 0; i < nums.length; i++) {
+            if (i == 0 || nums[i] != nums[i - 1]) {
+                int lo = i + 1;
+                int hi = nums.length - 1;
+                int target = 0 - nums[i];
+                while (lo < hi) {
+                    if (nums[lo] + nums[hi] == target) {
+                        result.add(Arrays.asList(nums[i], nums[lo], nums[hi]));
+                        while (lo < hi && nums[lo] == nums[lo + 1]) {
+                            lo++;
+                        }
+                        while (lo < hi && nums[hi] == nums[hi - 1]) {
+                            hi--;
+                        }
+                        lo++;
+                        hi--;
+                    } else if (nums[lo] + nums[hi] < target) {
+                        lo++;
+                    } else {
+                        hi--;
                     }
-                    while (low < high && nums[high] == nums[high + 1]) {
-                        high--;
-                    }
-                } else if (nums[low] + nums[high] > target) {
-                    high--;
-                } else {
-                    low++;
                 }
             }
         }
-        return list;
+        return result;
     }
 
     public static void main(String[] args) {

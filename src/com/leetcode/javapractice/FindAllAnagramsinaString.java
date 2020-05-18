@@ -5,39 +5,33 @@ import java.util.List;
 
 public class FindAllAnagramsinaString {
 
-    private static boolean isAnagram(String s, String p) {
-        if (p.length() == 0) {
-            return true;
-        }
-        if (s.length() != p.length()) {
-            return false;
-        }
-        int[] dict = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            dict[s.charAt(i) - 'a']++;
-        }
-        for (int i = 0; i < p.length(); i++) {
-            dict[p.charAt(i) - 'a']--;
-            if (dict[p.charAt(i) - 'a'] < 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public static List<Integer> findAnagrams(String s, String p) {
         List<Integer> list = new ArrayList<Integer>();
-        if (s.length() < p.length()) {
+        if (s == null || s.length() == 0 || p == null || p.length() == 0) {
             return list;
         }
-        if (s.length() == 0 && p.length() == 0) {
-            list.add(0);
-            return list;
+        int[] hash = new int[256];
+        for (char c : p.toCharArray()) {
+            hash[c]++;
         }
-        for (int i = 0; i <= s.length() - p.length(); i++) {
-            String str = s.substring(i, i + p.length());
-            if (isAnagram(str, p)) {
-                list.add(i);
+        int left = 0;
+        int right = 0;
+        int count = p.length();
+        while (right < s.length()) {
+            if (hash[s.charAt(right)] >= 1) {
+                count--;
+            }
+            hash[s.charAt(right)]--;
+            right++;
+            if (count == 0) {
+                list.add(left);
+            }
+            if (right - left == p.length()) {
+                if (hash[s.charAt(left)] >= 0) {
+                    count++;
+                }
+                hash[s.charAt(left)]++;
+                left++;
             }
         }
         return list;
