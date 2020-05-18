@@ -3,12 +3,11 @@ package com.leetcode.javapractice;
 public class MissingNumber {
 
     public static int missingNumber(int[] nums) {
-        int sum = 0;
+        int missing = nums.length;
         for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
+            missing ^= i ^ nums[i];
         }
-        int total = ((nums.length) * (nums.length + 1)) / 2;
-        return total - sum;
+        return missing;
     }
 
     public static void main(String[] args) {
