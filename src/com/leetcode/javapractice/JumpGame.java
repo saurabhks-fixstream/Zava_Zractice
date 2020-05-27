@@ -3,14 +3,13 @@ package com.leetcode.javapractice;
 public class JumpGame {
 
     public static boolean canJump(int[] nums) {
-        int jump = 0;
-        for (int i = 0; i <= jump; i++) {
-            jump = Math.max(jump, i + nums[i]);
-            if (jump >= nums.length - 1) {
-                return true;
+        int lastPos = nums.length - 1;
+        for (int i = nums.length - 1; i >= 0; i--) {
+            if (i + nums[i] >= lastPos) {
+                lastPos = i;
             }
         }
-        return false;
+        return lastPos == 0;
     }
 
     public static void main(String[] args) {
