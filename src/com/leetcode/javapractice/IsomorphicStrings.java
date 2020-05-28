@@ -9,18 +9,10 @@ public class IsomorphicStrings {
         Map<Character, Integer> smap = new HashMap<Character, Integer>();
         Map<Character, Integer> tmap = new HashMap<Character, Integer>();
         for (int i = 0; i < s.length(); i++) {
-            if (!smap.containsKey(s.charAt(i))) {
-                smap.put(s.charAt(i), i);
-            } else {
-                smap.put(s.charAt(i), smap.get(s.charAt(i)));
-            }
+            smap.put(s.charAt(i), i);
         }
         for (int i = 0; i < t.length(); i++) {
-            if (!tmap.containsKey(t.charAt(i))) {
-                tmap.put(t.charAt(i), i);
-            } else {
-                tmap.put(t.charAt(i), tmap.get(t.charAt(i)));
-            }
+            tmap.put(t.charAt(i), i);
         }
         for (int i = 0; i < s.length(); i++) {
             int skey = smap.get(s.charAt(i));
