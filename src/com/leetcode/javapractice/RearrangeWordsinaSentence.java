@@ -14,7 +14,6 @@ public class RearrangeWordsinaSentence {
     public static void main(String[] args) {
 
         System.out.println(arrangeWords("Leetcode is cool"));
-        System.out.println(arrangeWords("Swxxmsh qjhcpm tlvmdbava usujd tyt zdn"));
 
     }
 
