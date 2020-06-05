@@ -3,30 +3,15 @@ package com.leetcode.javapractice;
 public class ReverseLinkedList {
 
     public static ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) {
-            return head;
-        }
-        ListNode dummy = new ListNode(0);
-        ListNode dummyc = dummy;
-        ListNode temp = head;
         ListNode prev = null;
-        while (temp != null) {
-            if (temp.next != null) {
-                prev = temp;
-                temp = temp.next;
-            } else {
-                if (prev.next != null) {
-                    dummy.next = prev.next;
-                    dummy = dummy.next;
-                    prev.next = null;
-                    temp = head;
-                } else {
-                    dummy.next = head;
-                    temp = null;
-                }
-            }
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
         }
-        return dummyc.next;
+        return prev;
     }
 
     public static void main(String[] args) {
