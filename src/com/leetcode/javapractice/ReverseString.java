@@ -2,17 +2,23 @@ package com.leetcode.javapractice;
 
 public class ReverseString {
 
-    public static String reverseString(String s) {
-        StringBuilder S = new StringBuilder();
-        for (int i = s.length() - 1; i >= 0; i--) {
-            S.append(s.charAt(i));
+    public static void reverseString(char[] s) {
+        int start = 0;
+        int end = s.length - 1;
+        while (start < end) {
+            char c = s[start];
+            s[start] = s[end];
+            s[end] = c;
+            start++;
+            end--;
         }
-        return S.toString();
     }
 
     public static void main(String[] args) {
 
-        System.out.println(reverseString("hello"));
+        char[] s = { 'h', 'e', 'l', 'l', 'o' };
+        reverseString(s);
+        System.out.println(new String(s));
 
     }
 
