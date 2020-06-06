@@ -22,7 +22,6 @@ public class ReverseLinkedListII {
         }
         if (con != null) {
             con.next = prev;
-
         } else {
             head = prev;
         }
