@@ -2,45 +2,36 @@ package com.leetcode.javapractice;
 
 public class MergeTwoSortedLists {
 
-    private static ListNode insert(ListNode l1, ListNode current) {
-        ListNode temp = l1;
-        ListNode previous = null;
-        while (temp != null) {
-            if (temp.val < current.val) {
-                previous = temp;
-                temp = temp.next;
-            } else {
-                break;
-            }
-        }
-        if (temp == l1) {
-            current.next = l1;
-            l1 = current;
-        } else if (temp == null) {
-            previous.next = current;
-        } else {
-            ListNode temp1 = previous.next;
-            previous.next = current;
-            current.next = temp1;
-        }
-        return l1;
-    }
-
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) {
             return l2;
         } else if (l2 == null) {
             return l1;
         }
-        ListNode current = l2;
-        ListNode previous = null;
-        while (current != null) {
-            previous = current;
-            current = current.next;
-            previous.next = null;
-            l1 = insert(l1, previous);
+        ListNode dummy = new ListNode(0);
+        ListNode newHead = dummy;
+        while (l1 != null && l2 != null) {
+            if (l1.val <= l2.val) {
+                dummy.next = l1;
+                dummy = dummy.next;
+                l1 = l1.next;
+            } else {
+                dummy.next = l2;
+                dummy = dummy.next;
+                l2 = l2.next;
+            }
         }
-        return l1;
+        while (l1 != null) {
+            dummy.next = l1;
+            dummy = dummy.next;
+            l1 = l1.next;
+        }
+        while (l2 != null) {
+            dummy.next = l2;
+            dummy = dummy.next;
+            l2 = l2.next;
+        }
+        return newHead.next;
     }
 
     public static void main(String[] args) {
