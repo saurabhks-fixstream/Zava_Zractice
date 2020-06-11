@@ -9,11 +9,8 @@ public class PowerofTwo {
         while (n % 2 == 0) {
             n /= 2;
         }
-        if (n == 1) {
-            return true;
-        } else {
-            return false;
-        }
+        return n == 1 ? true
+                      : false;
     }
 
     public static void main(String[] args) {
