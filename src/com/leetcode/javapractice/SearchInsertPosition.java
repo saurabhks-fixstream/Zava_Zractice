@@ -3,41 +3,26 @@ package com.leetcode.javapractice;
 public class SearchInsertPosition {
 
     public static int searchInsert(int[] nums, int target) {
-        int pos = -1;
-        int l = 0;
-        int r = nums.length - 1;
-        if (target > nums[nums.length - 1]) {
-            return nums.length;
-        }
-        if (target < nums[0]) {
-            return 0;
-        }
-        while (l <= r) {
-            int m = (l + r) / 2;
-            if (nums[m] == target) {
-                pos = m;
-                return pos;
+        int start = 0;
+        int end = nums.length - 1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (nums[mid] == target) {
+                return mid;
             }
-            if (m != nums.length - 1 && target < nums[m + 1]) {
-                if (target < nums[m]) {
-                    pos = m;
-                } else {
-                    pos = m + 1;
-                }
-            }
-            if (nums[m] < target) {
-                l = m + 1;
+            if (nums[mid] < target) {
+                start = mid + 1;
             } else {
-                r = m - 1;
+                end = mid - 1;
             }
         }
-        return pos;
+        return start;
     }
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 3, 5, 6, 9 };
-        int target = 8;
+        int[] nums = { 1, 3, 5, 6 };
+        int target = 5;
         System.out.println(searchInsert(nums, target));
 
     }
