@@ -1,21 +1,30 @@
 package com.leetcode.javapractice;
 
-public class PathSumIII {
+import java.util.HashMap;
+import java.util.Map;
 
-    private static int pathSumHelper(TreeNode root, int sum) {
-        if (root == null) {
-            return 0;
-        }
-        return (root.val == sum ? 1
-                                : 0)
-               + pathSumHelper(root.left, sum - root.val) + pathSumHelper(root.right, sum - root.val);
-    }
+public class PathSumIII {
 
     public static int pathSum(TreeNode root, int sum) {
         if (root == null) {
             return 0;
         }
-        return pathSumHelper(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
+        Map<Integer, Integer> preSum = new HashMap<Integer, Integer>();
+        preSum.put(0, 1);
+        return pathSumHelper(root, 0, sum, preSum);
+    }
+
+    private static int pathSumHelper(TreeNode root, int curr, int sum, Map<Integer, Integer> preSum) {
+        if (root == null) {
+            return 0;
+        }
+        curr += root.val;
+        int numOfPaths = preSum.getOrDefault(curr - sum, 0);
+        preSum.put(curr, preSum.getOrDefault(curr, 0) + 1);
+        int res =
+                numOfPaths + pathSumHelper(root.left, curr, sum, preSum) + pathSumHelper(root.right, curr, sum, preSum);
+        preSum.put(curr, preSum.get(curr) - 1);
+        return res;
     }
 
     public static void main(String[] args) {
