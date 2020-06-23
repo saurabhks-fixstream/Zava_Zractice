@@ -8,7 +8,7 @@ public class BulbSwitcher {
 
     public static void main(String[] args) {
 
-        System.out.println(bulbSwitch(30));
+        System.out.println(bulbSwitch(3));
 
     }
 
