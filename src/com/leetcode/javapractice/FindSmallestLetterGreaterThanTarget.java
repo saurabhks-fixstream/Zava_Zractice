@@ -21,6 +21,7 @@ public class FindSmallestLetterGreaterThanTarget {
 
         char[] letters = { 'c', 'f', 'j' };
         System.out.println(nextGreatestLetter(letters, 'a'));
+
     }
 
 }

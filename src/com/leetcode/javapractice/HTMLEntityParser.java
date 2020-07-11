@@ -5,16 +5,6 @@ import java.util.Map;
 
 public class HTMLEntityParser {
 
-    /*
-     * The special characters and their entities for HTML are:
-     * Quotation Mark: the entity is &quot; and symbol character is ".
-     * Single Quote Mark: the entity is &apos; and symbol character is '.
-     * Ampersand: the entity is &amp; and symbol character is &.
-     * Greater Than Sign: the entity is &gt; and symbol character is >.
-     * Less Than Sign: the entity is &lt; and symbol character is <.
-     * Slash: the entity is &frasl; and symbol character is /.
-     */
-
     public static String entityParser(String text) {
         StringBuilder sb = new StringBuilder();
         Map<String, Character> map = new HashMap<String, Character>();
@@ -47,7 +37,6 @@ public class HTMLEntityParser {
     public static void main(String[] args) {
 
         System.out.println(entityParser("&amp; is an HTML entity but &ambassador; is not."));
-        System.out.println(entityParser(" &amp; &gt; 8|eK8FDRO"));
 
     }
 
