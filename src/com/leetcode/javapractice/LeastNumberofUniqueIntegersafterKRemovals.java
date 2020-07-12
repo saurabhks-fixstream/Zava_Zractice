@@ -28,6 +28,7 @@ public class LeastNumberofUniqueIntegersafterKRemovals {
     }
 
     public static void main(String[] args) {
+
         int[] arr = { 5, 5, 4 };
         System.out.println(findLeastNumOfUniqueInts(arr, 1));
 

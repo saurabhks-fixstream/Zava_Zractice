@@ -41,7 +41,8 @@ public class SurroundedRegions {
 
     public static void main(String[] args) {
 
-        char[][] board = { { 'X', 'X', 'X', 'X' }, { 'X', 'O', 'O', 'X' }, { 'X', 'X', 'O', 'X' }, { 'X', 'O', 'X', 'X' } };
+        char[][] board =
+                { { 'X', 'X', 'X', 'X' }, { 'X', 'O', 'O', 'X' }, { 'X', 'X', 'O', 'X' }, { 'X', 'O', 'X', 'X' } };
         solve(board);
         for (char[] b : board) {
             for (char c : b) {

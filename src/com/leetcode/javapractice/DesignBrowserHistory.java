@@ -32,7 +32,7 @@ public class DesignBrowserHistory {
     }
 
     public static void main(String[] args) {
-        
+
         DesignBrowserHistory browserHistory = new DesignBrowserHistory("leetcode.com");
         browserHistory.visit("google.com");
         browserHistory.visit("facebook.com");
