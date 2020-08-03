@@ -3,23 +3,26 @@ package com.leetcode.javapractice;
 public class ValidPalindrome {
 
     public static boolean isPalindrome(String s) {
-        StringBuilder sb = new StringBuilder();
-        if (s.isEmpty()) {
-            return true;
-        }
-        for (int i = 0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (Character.isLetterOrDigit(ch)) {
-                sb.append(Character.toLowerCase(ch));
+        int start = 0;
+        int end = s.length() - 1;
+        while (start < end) {
+            char f = Character.toLowerCase(s.charAt(start));
+            if (!Character.isLetterOrDigit(f)) {
+                start++;
+                continue;
             }
+            char l = Character.toLowerCase(s.charAt(end));
+            if (!Character.isLetterOrDigit(l)) {
+                end--;
+                continue;
+            }
+            if (f != l) {
+                return false;
+            }
+            start++;
+            end--;
         }
-        String original = sb.toString();
-        sb.reverse();
-        if (original.equals(sb.toString())) {
-            return true;
-        } else {
-            return false;
-        }
+        return true;
     }
 
     public static void main(String[] args) {
