@@ -25,7 +25,7 @@ public class ThreeSumSmaller {
 
     public static void main(String[] args) {
 
-        int[] nums = { -2, 0, 1, 3 };
+        int[] nums = {-2, 0, 1, 3};
         System.out.println(threeSumSmaller(nums, 2));
 
     }

@@ -41,7 +41,7 @@ public class StringMatchinginanArray {
 
     public static void main(String[] args) {
 
-        String[] words = { "mass", "as", "hero", "superhero" };
+        String[] words = {"mass", "as", "hero", "superhero"};
         System.out.println(stringMatching(words));
 
     }

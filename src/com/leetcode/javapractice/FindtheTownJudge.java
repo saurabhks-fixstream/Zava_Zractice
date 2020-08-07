@@ -19,7 +19,7 @@ public class FindtheTownJudge {
     public static void main(String[] args) {
 
         int N = 4;
-        int[][] trust = { { 1, 3 }, { 1, 4 }, { 2, 3 }, { 2, 4 }, { 4, 3 } };
+        int[][] trust = {{1, 3}, {1, 4}, {2, 3}, {2, 4}, {4, 3}};
         System.out.println(findJudge(N, trust));
 
     }

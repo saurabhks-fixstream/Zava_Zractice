@@ -10,7 +10,7 @@ public class WalkingRobotSimulation {
         for (int[] obstacle : obstacles) {
             set.add(obstacle[0] + " " + obstacle[1]);
         }
-        int[][] dirs = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
+        int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int d = 0;
         int x = 0;
         int y = 0;
@@ -39,7 +39,7 @@ public class WalkingRobotSimulation {
 
     public static void main(String[] args) {
 
-        int[] commands = { 4, -1, 3 };
+        int[] commands = {4, -1, 3};
         int[][] obstacles = {};
         System.out.println(robotSim(commands, obstacles));
 

@@ -24,7 +24,7 @@ public class UncrossedLines {
             count = 1 + maxUncrossedLinesHelper(A, B, a + 1, b + 1, memo);
         } else {
             count += Math.max(maxUncrossedLinesHelper(A, B, a + 1, b, memo),
-                              maxUncrossedLinesHelper(A, B, a, b + 1, memo));
+                    maxUncrossedLinesHelper(A, B, a, b + 1, memo));
         }
         memo[a][b] = count;
         return count;
@@ -32,8 +32,8 @@ public class UncrossedLines {
 
     public static void main(String[] args) {
 
-        int[] A = { 1, 4, 2 };
-        int[] B = { 1, 2, 4 };
+        int[] A = {1, 4, 2};
+        int[] B = {1, 2, 4};
         System.out.println(maxUncrossedLines(A, B));
 
     }

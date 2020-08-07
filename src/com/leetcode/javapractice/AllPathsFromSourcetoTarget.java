@@ -31,7 +31,7 @@ public class AllPathsFromSourcetoTarget {
 
     public static void main(String[] args) {
 
-        int[][] graph = { { 1, 2 }, { 3 }, { 3 }, {} };
+        int[][] graph = {{1, 2}, {3}, {3}, {}};
         System.out.println(allPathsSourceTarget(graph));
 
     }

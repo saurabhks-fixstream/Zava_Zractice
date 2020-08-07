@@ -24,7 +24,7 @@ public class FindaValueofaMysteriousFunctionClosesttoTarget {
 
     public static void main(String[] args) {
 
-        int[] arr = { 9, 12, 3, 7, 15 };
+        int[] arr = {9, 12, 3, 7, 15};
         System.out.println(closestToTarget(arr, 5));
 
     }

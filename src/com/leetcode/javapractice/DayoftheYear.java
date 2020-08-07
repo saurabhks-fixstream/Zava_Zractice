@@ -3,7 +3,7 @@ package com.leetcode.javapractice;
 public class DayoftheYear {
 
     public static int dayOfYear(String date) {
-        int[] daysOfMonth = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        int[] daysOfMonth = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
         int year = Integer.valueOf(date.substring(0, 4));
         int month = Integer.valueOf(date.substring(5, 7));
         int day = Integer.valueOf(date.substring(8, 10));

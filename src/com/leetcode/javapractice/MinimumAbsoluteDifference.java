@@ -28,7 +28,7 @@ public class MinimumAbsoluteDifference {
 
     public static void main(String[] args) {
 
-        int[] arr = { 40, 11, 26, 27, -20 };
+        int[] arr = {40, 11, 26, 27, -20};
         System.out.println(minimumAbsDifference(arr));
 
     }

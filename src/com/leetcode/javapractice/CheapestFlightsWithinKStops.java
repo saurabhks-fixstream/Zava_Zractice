@@ -16,7 +16,7 @@ public class CheapestFlightsWithinKStops {
             prices.get(flight[0]).put(flight[1], flight[2]);
         }
         Queue<int[]> pq = new PriorityQueue<>((a, b) -> (Integer.compare(a[0], b[0])));
-        pq.add(new int[] { 0, src, K + 1 });
+        pq.add(new int[]{0, src, K + 1});
         while (!pq.isEmpty()) {
             int[] top = pq.remove();
             int price = top[0];
@@ -28,7 +28,7 @@ public class CheapestFlightsWithinKStops {
             if (stops > 0) {
                 Map<Integer, Integer> adj = prices.getOrDefault(city, new HashMap<>());
                 for (int a : adj.keySet()) {
-                    pq.add(new int[] { price + adj.get(a), a, stops - 1 });
+                    pq.add(new int[]{price + adj.get(a), a, stops - 1});
                 }
             }
         }
@@ -37,7 +37,7 @@ public class CheapestFlightsWithinKStops {
 
     public static void main(String[] args) {
 
-        int[][] flights = { { 0, 1, 100 }, { 1, 2, 100 }, { 0, 2, 500 } };
+        int[][] flights = {{0, 1, 100}, {1, 2, 100}, {0, 2, 500}};
         System.out.println(findCheapestPrice(3, flights, 0, 2, 1));
 
     }

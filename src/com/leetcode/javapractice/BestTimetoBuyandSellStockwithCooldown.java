@@ -17,7 +17,7 @@ public class BestTimetoBuyandSellStockwithCooldown {
 
     public static void main(String[] args) {
 
-        int[] prices = { 1, 2, 3, 0, 2 };
+        int[] prices = {1, 2, 3, 0, 2};
         System.out.println(maxProfit(prices));
 
     }

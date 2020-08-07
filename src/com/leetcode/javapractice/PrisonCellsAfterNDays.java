@@ -8,7 +8,7 @@ public class PrisonCellsAfterNDays {
             int[] newCells = new int[8];
             for (int j = 1; j < cells.length - 1; j++) {
                 newCells[j] = cells[j - 1] == cells[j + 1] ? 1
-                                                           : 0;
+                        : 0;
             }
             cells = newCells;
         }
@@ -17,7 +17,7 @@ public class PrisonCellsAfterNDays {
 
     public static void main(String[] args) {
 
-        int[] cells = { 0, 1, 0, 1, 1, 0, 0, 1 };
+        int[] cells = {0, 1, 0, 1, 1, 0, 0, 1};
         int[] result = prisonAfterNDays(cells, 7);
         for (int i : result) {
             System.out.print(i + ", ");

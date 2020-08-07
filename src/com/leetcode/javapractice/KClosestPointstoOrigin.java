@@ -28,7 +28,7 @@ public class KClosestPointstoOrigin {
 
     public static void main(String[] args) {
 
-        int[][] points = { { 3, 3 }, { 5, -1 }, { -2, 4 } };
+        int[][] points = {{3, 3}, {5, -1}, {-2, 4}};
         int K = 2;
         int[][] result = kClosest(points, K);
         for (int i = 0; i < result.length; i++) {

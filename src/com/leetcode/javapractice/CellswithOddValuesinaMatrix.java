@@ -27,7 +27,7 @@ public class CellswithOddValuesinaMatrix {
 
     public static void main(String[] args) {
 
-        int[][] indices = { { 0, 1 }, { 1, 1 } };
+        int[][] indices = {{0, 1}, {1, 1}};
         System.out.println(oddCells(2, 3, indices));
 
     }

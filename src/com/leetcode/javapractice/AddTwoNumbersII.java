@@ -20,9 +20,9 @@ public class AddTwoNumbersII {
         ListNode dummy = null;
         while (!stack1.isEmpty() || !stack2.isEmpty()) {
             int x = (!stack1.isEmpty()) ? stack1.pop()
-                                        : 0;
+                    : 0;
             int y = (!stack2.isEmpty()) ? stack2.pop()
-                                        : 0;
+                    : 0;
             sum = x + y + carry;
             carry = sum / 10;
             ListNode temp = new ListNode(sum % 10);

@@ -13,7 +13,7 @@ public class LetterCombinationsofaPhoneNumber {
         if (digits.contains("1") || digits.contains("0")) {
             return list;
         }
-        String[] strings = { "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+        String[] strings = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         list.add("");
         for (int i = 0; i < digits.length(); i++) {
             int index = digits.charAt(i) - '0' - 2;

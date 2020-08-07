@@ -7,7 +7,7 @@ public class CountSquareSubmatriceswithAllOnes {
         int n = matrix[0].length;
         int count = 0;
         for (int s = 0; s <= (m < n ? m
-                                    : n);
+                : n);
              s++) {
             for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
@@ -36,7 +36,7 @@ public class CountSquareSubmatriceswithAllOnes {
 
     public static void main(String[] args) {
 
-        int[][] matrix = { { 0, 1, 1, 1 }, { 1, 1, 1, 1 }, { 0, 1, 1, 1 } };
+        int[][] matrix = {{0, 1, 1, 1}, {1, 1, 1, 1}, {0, 1, 1, 1}};
         System.out.println(countSquares(matrix));
 
     }

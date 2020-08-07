@@ -28,7 +28,7 @@ public class CanPlaceFlowers {
 
     public static void main(String[] args) {
 
-        int[] flowerbed = { 1, 0, 0, 0, 1 };
+        int[] flowerbed = {1, 0, 0, 0, 1};
         System.out.println(canPlaceFlowers(flowerbed, 1));
 
     }

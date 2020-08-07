@@ -27,7 +27,7 @@ public class PartitionArrayIntoThreePartsWithEqualSum {
 
     public static void main(String[] args) {
 
-        int[] A = { 0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1 };
+        int[] A = {0, 2, 1, -6, 6, -7, 9, 1, 2, 0, 1};
         System.out.println(canThreePartsEqualSum(A));
 
     }

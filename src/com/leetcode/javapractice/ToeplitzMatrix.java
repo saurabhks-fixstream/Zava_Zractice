@@ -25,9 +25,9 @@ public class ToeplitzMatrix {
 
     public static void main(String[] args) {
 
-        int[][] matrix = new int[][] { { 1, 2, 3, 4 }, { 5, 1, 2, 3 }, { 9, 5, 1, 2 } };
-        int[][] matrix1 = new int[][] { { 1, 2 }, { 2, 2 } };
-        int[][] matrix2 = new int[][] { { 57, 54 }, { 84, 57 } };
+        int[][] matrix = new int[][]{{1, 2, 3, 4}, {5, 1, 2, 3}, {9, 5, 1, 2}};
+        int[][] matrix1 = new int[][]{{1, 2}, {2, 2}};
+        int[][] matrix2 = new int[][]{{57, 54}, {84, 57}};
         System.out.println(isToeplitzMatrix(matrix));
         System.out.println(isToeplitzMatrix(matrix1));
         System.out.println(isToeplitzMatrix(matrix2));

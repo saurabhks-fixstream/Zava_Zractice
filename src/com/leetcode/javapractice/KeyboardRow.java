@@ -35,7 +35,7 @@ public class KeyboardRow {
 
     public static void main(String[] args) {
 
-        String[] words = { "Hello", "Alaska", "Dad", "Peace" };
+        String[] words = {"Hello", "Alaska", "Dad", "Peace"};
         for (String s : findWords(words)) {
             System.out.println(s);
         }

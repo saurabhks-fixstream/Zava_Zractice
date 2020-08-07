@@ -24,7 +24,7 @@ public class SingleNumber {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 2, 2, 4, 4, 3, 3, 5, 5, 6, 6 };
+        int[] nums = {1, 2, 2, 2, 4, 4, 3, 3, 5, 5, 6, 6};
         System.out.println(singleNumber(nums));
 
     }

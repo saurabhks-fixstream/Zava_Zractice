@@ -33,7 +33,8 @@ public class VowelSpellchecker {
             if (words_perfect.contains(query)) {
                 result[i] = query;
             } else if (words_cap.keySet().contains(query.toLowerCase())) {
-                result[i] = words_cap.get(query.toLowerCase());;
+                result[i] = words_cap.get(query.toLowerCase());
+                ;
             } else {
                 char[] chars = query.toCharArray();
                 StringBuilder sb = new StringBuilder();
@@ -60,8 +61,8 @@ public class VowelSpellchecker {
 
     public static void main(String[] args) {
 
-        String[] wordlist = { "KiTe", "kite", "hare", "Hare" };
-        String[] queries = { "kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto" };
+        String[] wordlist = {"KiTe", "kite", "hare", "Hare"};
+        String[] queries = {"kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"};
         String[] result = spellchecker(wordlist, queries);
         for (String s : result) {
             System.out.print(s + " ");

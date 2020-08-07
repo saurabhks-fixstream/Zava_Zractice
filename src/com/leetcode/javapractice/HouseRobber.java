@@ -21,7 +21,7 @@ public class HouseRobber {
 
     public static void main(String[] args) {
 
-        int[] nums = { 3, 2, 4, 2, 6, 55, 3, 22, 11, 4, 66, 3, };
+        int[] nums = {3, 2, 4, 2, 6, 55, 3, 22, 11, 4, 66, 3,};
         System.out.println(rob(nums));
 
     }

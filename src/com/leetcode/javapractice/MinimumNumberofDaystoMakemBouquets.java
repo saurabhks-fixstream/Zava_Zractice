@@ -43,7 +43,7 @@ public class MinimumNumberofDaystoMakemBouquets {
 
     public static void main(String[] args) {
 
-        int[] bloomDay = { 1, 10, 3, 10, 2 };
+        int[] bloomDay = {1, 10, 3, 10, 2};
         System.out.println(minDays(bloomDay, 3, 1));
 
     }

@@ -21,7 +21,7 @@ public class ShortestWordDistance {
 
     public static void main(String[] args) {
 
-        String[] words = { "practice", "makes", "perfect", "coding", "makes" };
+        String[] words = {"practice", "makes", "perfect", "coding", "makes"};
         System.out.println(shortestDistance(words, "coding", "practice"));
 
     }

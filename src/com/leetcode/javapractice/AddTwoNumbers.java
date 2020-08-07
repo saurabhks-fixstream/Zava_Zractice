@@ -8,10 +8,10 @@ public class AddTwoNumbers {
         ListNode temp = number;
         while (l1 != null || l2 != null) {
             sum = ((l1 != null) ? l1.val
-                                : 0)
-                  + ((l2 != null) ? l2.val
-                                  : 0)
-                  + carry;
+                    : 0)
+                    + ((l2 != null) ? l2.val
+                    : 0)
+                    + carry;
             carry = sum / 10;
             temp.next = new ListNode(sum % 10);
             temp = temp.next;

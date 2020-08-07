@@ -13,14 +13,14 @@ public class KidsWiththeGreatestNumberofCandies {
         }
         for (int i = 0; i < candies.length; i++) {
             result.add((candies[i] + extraCandies) >= max ? true
-                                                          : false);
+                    : false);
         }
         return result;
     }
 
     public static void main(String[] args) {
 
-        int[] candies = { 2, 3, 5, 1, 3 };
+        int[] candies = {2, 3, 5, 1, 3};
         System.out.println(kidsWithCandies(candies, 3));
 
     }

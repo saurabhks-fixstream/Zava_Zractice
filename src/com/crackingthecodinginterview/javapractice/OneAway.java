@@ -26,7 +26,7 @@ public class OneAway {
             }
         }
         int diff = first.length() > second.length() ? first.length()
-                                                    : second.length();
+                : second.length();
         if (count == diff || count == diff - 1 || count == diff + 1) {
             return true;
         }

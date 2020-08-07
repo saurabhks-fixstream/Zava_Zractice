@@ -30,7 +30,7 @@ public class CheckIfaStringIsaValidSequencefromRoottoLeavesPathinaBinaryTree {
         root.left.right.left = new TreeNode(0);
         root.left.right.right = new TreeNode(0);
         root.right.left = new TreeNode(0);
-        int[] arr = { 0, 1, 0, 1 };
+        int[] arr = {0, 1, 0, 1};
         System.out.println(isValidSequence(root, arr));
 
     }

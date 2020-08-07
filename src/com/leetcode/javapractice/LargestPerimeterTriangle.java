@@ -20,7 +20,7 @@ public class LargestPerimeterTriangle {
 
     public static void main(String[] args) {
 
-        int[] A = { 2, 1, 2 };
+        int[] A = {2, 1, 2};
         System.out.println(largestPerimeter(A));
 
     }

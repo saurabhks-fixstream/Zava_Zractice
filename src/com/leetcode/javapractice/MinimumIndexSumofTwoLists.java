@@ -42,8 +42,8 @@ public class MinimumIndexSumofTwoLists {
 
     public static void main(String[] args) {
 
-        String[] list1 = { "Shogun", "Tapioca Express", "Burger King", "KFC" };
-        String[] list2 = { "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun" };
+        String[] list1 = {"Shogun", "Tapioca Express", "Burger King", "KFC"};
+        String[] list2 = {"Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"};
         String[] strings = findRestaurant(list1, list2);
         for (String s : strings) {
             System.out.print(s + " ");

@@ -13,14 +13,14 @@ public class MajorityElement {
                 candidate = num;
             }
             count += (num == candidate) ? 1
-                                        : -1;
+                    : -1;
         }
         return candidate;
     }
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 1, 1, 1, 3, 3, 4, 4, 3, 2, 2, 2, 4, 5, 5 };
+        int[] nums = {1, 1, 1, 1, 3, 3, 4, 4, 3, 2, 2, 2, 4, 5, 5};
         System.out.println(majorityElement(nums));
 
     }

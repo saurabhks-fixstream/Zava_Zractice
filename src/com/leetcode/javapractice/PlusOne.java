@@ -8,11 +8,11 @@ public class PlusOne {
         for (int i = digits.length - 1; i >= 0; i--) {
             int sum = 0;
             sum += digits[i] + carry;
-            carry = sum / 10;;
+            carry = sum / 10;
             digits[i] = sum % 10;
         }
         int[] number = new int[carry == 1 ? digits.length + 1
-                                          : digits.length];
+                : digits.length];
         int j = 0;
         if (carry == 1) {
             number[0] = 1;
@@ -26,7 +26,7 @@ public class PlusOne {
 
     public static void main(String[] args) {
 
-        int[] digits = { 9, 9, 9 };
+        int[] digits = {9, 9, 9};
         int[] number = plusOne(digits);
         System.out.print("[");
         for (int i : number) {

@@ -9,10 +9,10 @@ public class PathCrossing {
 
     public static boolean isPathCrossing(String path) {
         Map<Character, int[]> dirs = new HashMap<Character, int[]>();
-        dirs.put('N', new int[] { 0, 1 });
-        dirs.put('S', new int[] { 0, -1 });
-        dirs.put('E', new int[] { 1, 0 });
-        dirs.put('W', new int[] { -1, 0 });
+        dirs.put('N', new int[]{0, 1});
+        dirs.put('S', new int[]{0, -1});
+        dirs.put('E', new int[]{1, 0});
+        dirs.put('W', new int[]{-1, 0});
         Set<String> visited = new HashSet<String>();
         visited.add(0 + "$" + 0);
         int x = 0;

@@ -22,7 +22,7 @@ public class BinaryPrefixDivisibleBy5 {
 
     public static void main(String[] args) {
 
-        int[] A = { 0, 1, 1 };
+        int[] A = {0, 1, 1};
         System.out.println(prefixesDivBy5(A));
 
     }

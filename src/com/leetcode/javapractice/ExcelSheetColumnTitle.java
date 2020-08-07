@@ -4,8 +4,8 @@ public class ExcelSheetColumnTitle {
 
     public static String convertToTitle(int n) {
         String title = "";
-        char[] alphabets = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
-                             'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+        char[] alphabets = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+                'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
         if (n <= 26) {
             title = Character.toString(alphabets[n - 1]);
             return title;

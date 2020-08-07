@@ -11,7 +11,7 @@ public class FractiontoRecurringDecimal {
         }
         StringBuilder res = new StringBuilder();
         res.append(((numerator > 0) ^ (denominator > 0)) ? "-"
-                                                         : "");
+                : "");
         long num = Math.abs((long) numerator);
         long den = Math.abs((long) denominator);
         res.append(num / den);

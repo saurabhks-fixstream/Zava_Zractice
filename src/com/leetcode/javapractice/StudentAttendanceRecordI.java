@@ -13,7 +13,7 @@ public class StudentAttendanceRecordI {
             }
         }
         return s.contains("LLL") ? false
-                                 : true;
+                : true;
     }
 
     public static void main(String[] args) {

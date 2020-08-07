@@ -37,8 +37,8 @@ public class NextGreaterElementI {
 
     public static void main(String[] args) {
 
-        int[] nums1 = { 3, 1, 5, 7, 9, 2, 6 };
-        int[] nums2 = { 1, 2, 3, 5, 6, 7, 9, 11 };
+        int[] nums1 = {3, 1, 5, 7, 9, 2, 6};
+        int[] nums2 = {1, 2, 3, 5, 6, 7, 9, 11};
         int[] nums = nextGreaterElement(nums1, nums2);
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + " ");

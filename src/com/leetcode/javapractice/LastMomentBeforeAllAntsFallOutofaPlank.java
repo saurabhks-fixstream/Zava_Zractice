@@ -15,8 +15,8 @@ public class LastMomentBeforeAllAntsFallOutofaPlank {
 
     public static void main(String[] args) {
 
-        int[] left = { 4, 3 };
-        int[] right = { 0, 1 };
+        int[] left = {4, 3};
+        int[] right = {0, 1};
         System.out.println(getLastMoment(4, left, right));
 
     }

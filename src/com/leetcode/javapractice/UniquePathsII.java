@@ -10,7 +10,7 @@ public class UniquePathsII {
         }
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
-        int[][] dir = { { 0, 1 }, { 1, 0 } };
+        int[][] dir = {{0, 1}, {1, 0}};
         int[][] memo = new int[m + 1][n + 1];
         for (int[] mem : memo) {
             Arrays.fill(mem, -1);
@@ -50,7 +50,7 @@ public class UniquePathsII {
 
     public static void main(String[] args) {
 
-        int[][] obstacleGrid = { { 0, 0, 0 }, { 0, 1, 0 }, { 0, 0, 0 } };
+        int[][] obstacleGrid = {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}};
         System.out.println(uniquePathsWithObstacles(obstacleGrid));
 
     }

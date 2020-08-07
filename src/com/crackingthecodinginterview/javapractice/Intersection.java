@@ -10,9 +10,9 @@ public class Intersection {
         ListNode b = headB;
         while (a != b) {
             a = (a == null) ? headB
-                            : a.next;
+                    : a.next;
             b = (b == null) ? headA
-                            : b.next;
+                    : b.next;
         }
         return a;
     }

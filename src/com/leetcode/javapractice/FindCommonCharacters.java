@@ -33,7 +33,7 @@ public class FindCommonCharacters {
 
     public static void main(String[] args) {
 
-        String[] A = { "bella", "label", "roller" };
+        String[] A = {"bella", "label", "roller"};
         System.out.println(commonChars(A));
 
     }

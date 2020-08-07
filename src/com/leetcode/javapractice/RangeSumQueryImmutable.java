@@ -22,7 +22,7 @@ public class RangeSumQueryImmutable {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 4, -6, 2, 4, 5, 6 };
+        int[] nums = {1, 4, -6, 2, 4, 5, 6};
         NumArray(nums);
         System.out.println(sumRange(0, 0));
         System.out.println(sumRange(1, 2));

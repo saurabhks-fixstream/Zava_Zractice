@@ -17,7 +17,7 @@ public class DungeonGame {
             for (int j = n - 1; j >= 0; j--) {
                 int health = Math.min(dp[i + 1][j], dp[i][j + 1]) - dungeon[i][j];
                 dp[i][j] = health <= 0 ? 1
-                                       : health;
+                        : health;
             }
         }
         return dp[0][0];
@@ -25,7 +25,7 @@ public class DungeonGame {
 
     public static void main(String[] args) {
 
-        int[][] dungeon = { { -2, -3, 3 }, { -5, -10, 1 }, { 10, 30, -5 } };
+        int[][] dungeon = {{-2, -3, 3}, {-5, -10, 1}, {10, 30, -5}};
         System.out.println(calculateMinimumHP(dungeon));
 
     }

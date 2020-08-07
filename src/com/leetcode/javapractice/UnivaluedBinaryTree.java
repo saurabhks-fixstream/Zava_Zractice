@@ -4,7 +4,7 @@ public class UnivaluedBinaryTree {
 
     public static boolean isUnivalTree(TreeNode root) {
         return isUnivalTreeHelper(root, root != null ? root.val
-                                                     : 0);
+                : 0);
     }
 
     private static boolean isUnivalTreeHelper(TreeNode root, int val) {

@@ -11,7 +11,7 @@ public class DetectCapital {
             }
         }
         if (count == 0 || count == wordarray.length
-            || count == 1 && wordarray[0] == Character.toUpperCase(wordarray[0])) {
+                || count == 1 && wordarray[0] == Character.toUpperCase(wordarray[0])) {
             return true;
         }
         return false;

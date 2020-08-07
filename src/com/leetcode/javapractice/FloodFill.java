@@ -23,7 +23,7 @@ public class FloodFill {
 
     public static void main(String[] args) {
 
-        int[][] image = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
+        int[][] image = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
         floodFill(image, 1, 1, 2);
         for (int[] i : image) {
             for (int j : i) {

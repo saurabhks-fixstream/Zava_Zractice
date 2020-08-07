@@ -36,7 +36,7 @@ public class MaximizeSumOfArrayAfterKNegations {
 
     public static void main(String[] args) {
 
-        int[] A = { -8, 3, -5, -3, -5, -2 };
+        int[] A = {-8, 3, -5, -3, -5, -2};
         int K = 6;
         System.out.println(largestSumAfterKNegations(A, K));
 

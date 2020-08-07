@@ -19,7 +19,7 @@ public class LeftmostColumnwithatLeastaOne {
             }
         }
         return y + 1 == m ? -1
-                          : y + 1;
+                : y + 1;
     }
 
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class LeftmostColumnwithatLeastaOne {
 
 class BinaryMatrix {
 
-    int[][] matrix = { { 0, 0 }, { 1, 1 } };
+    int[][] matrix = {{0, 0}, {1, 1}};
 
     public int get(int x, int y) {
         return matrix[x][y];

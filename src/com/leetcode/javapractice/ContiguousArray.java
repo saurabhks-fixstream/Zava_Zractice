@@ -12,7 +12,7 @@ public class ContiguousArray {
         int max = 0;
         for (int i = 0; i < nums.length; i++) {
             count += nums[i] == 1 ? 1
-                                  : -1;
+                    : -1;
             if (map.containsKey(count)) {
                 max = Math.max(max, i - map.get(count));
             } else {
@@ -24,7 +24,7 @@ public class ContiguousArray {
 
     public static void main(String[] args) {
 
-        int[] nums = { 0, 1, 0 };
+        int[] nums = {0, 1, 0};
         System.out.println(findMaxLength(nums));
 
     }

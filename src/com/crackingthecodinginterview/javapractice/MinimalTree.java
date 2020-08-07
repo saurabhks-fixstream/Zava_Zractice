@@ -35,7 +35,7 @@ public class MinimalTree {
 
     public static void main(String[] args) {
 
-        int[] array = { 0, 2, 3, 6, 7, 9, 12, 17, 21 };
+        int[] array = {0, 2, 3, 6, 7, 9, 12, 17, 21};
         TreeNode root = createMinimalBST(array);
         traverse(root);
 

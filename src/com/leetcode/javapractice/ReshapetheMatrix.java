@@ -25,7 +25,7 @@ public class ReshapetheMatrix {
 
     public static void main(String[] args) {
 
-        int[][] nums = { { 1, 2 }, { 3, 4 } };
+        int[][] nums = {{1, 2}, {3, 4}};
         int[][] result = matrixReshape(nums, 1, 4);
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result[0].length; j++) {

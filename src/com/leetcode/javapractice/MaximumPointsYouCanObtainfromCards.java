@@ -24,7 +24,7 @@ public class MaximumPointsYouCanObtainfromCards {
 
     public static void main(String[] args) {
 
-        int[] cardPoints = { 96, 90, 41, 82, 39, 74, 64, 50, 30 };
+        int[] cardPoints = {96, 90, 41, 82, 39, 74, 64, 50, 30};
         System.out.println(maxScore(cardPoints, 8));
 
     }

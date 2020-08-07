@@ -22,14 +22,14 @@ public class WordSearch {
         }
         board[i][j] = '*';
         boolean result = dfs(word, board, idx + 1, i - 1, j, x, y) || dfs(word, board, idx + 1, i + 1, j, x, y)
-                         || dfs(word, board, idx + 1, i, j + 1, x, y) || dfs(word, board, idx + 1, i, j - 1, x, y);
+                || dfs(word, board, idx + 1, i, j + 1, x, y) || dfs(word, board, idx + 1, i, j - 1, x, y);
         board[i][j] = word.charAt(idx);
         return result;
     }
 
     public static void main(String[] args) {
 
-        char[][] board = { { 'A', 'B', 'C', 'E' }, { 'S', 'F', 'C', 'S' }, { 'A', 'D', 'E', 'E' } };
+        char[][] board = {{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}};
         System.out.println(exist(board, "ABCCED"));
 
     }

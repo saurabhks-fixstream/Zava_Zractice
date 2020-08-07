@@ -18,7 +18,7 @@ public class ProductofArrayExceptSelf {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 3, 4, 0 };
+        int[] nums = {1, 2, 3, 4, 0};
         int[] result = productExceptSelf(nums);
         for (int i : result) {
             System.out.print(i + " ");

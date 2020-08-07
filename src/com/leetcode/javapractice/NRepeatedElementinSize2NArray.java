@@ -31,7 +31,7 @@ public class NRepeatedElementinSize2NArray {
 
     public static void main(String[] args) {
 
-        int[] A = { 5, 1, 5, 2, 5, 3, 5, 4 };
+        int[] A = {5, 1, 5, 2, 5, 3, 5, 4};
         System.out.println(repeatedNTimes(A));
 
     }

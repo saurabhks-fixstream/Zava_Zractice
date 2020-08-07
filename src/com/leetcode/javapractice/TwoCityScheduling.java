@@ -26,7 +26,7 @@ public class TwoCityScheduling {
 
     public static void main(String[] args) {
 
-        int[][] costs = { { 10, 20 }, { 30, 200 }, { 400, 50 }, { 30, 20 } };
+        int[][] costs = {{10, 20}, {30, 200}, {400, 50}, {30, 20}};
         System.out.println(twoCitySchedCost(costs));
 
     }

@@ -10,7 +10,7 @@ public class ReverseVowelsofaString {
             return s;
         }
         Set<Character> vowels = new HashSet<Character>();
-        char[] ch = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+        char[] ch = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
         for (char c : ch) {
             vowels.add(c);
         }

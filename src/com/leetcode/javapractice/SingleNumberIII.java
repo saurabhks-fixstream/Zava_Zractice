@@ -21,7 +21,7 @@ public class SingleNumberIII {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 1, 3, 2, 5 };
+        int[] nums = {1, 2, 1, 3, 2, 5};
         int[] result = singleNumber(nums);
         for (int r : result) {
             System.out.print(r + " ");

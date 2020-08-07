@@ -37,7 +37,7 @@ public class WordSearchII {
         }
         int m = board.length;
         int n = board[0].length;
-        int[][] dirs = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 if (root.children.containsKey(board[i][j])) {
@@ -76,8 +76,8 @@ public class WordSearchII {
     public static void main(String[] args) {
 
         char[][] board =
-                { { 'o', 'a', 'a', 'n' }, { 'e', 't', 'a', 'e' }, { 'i', 'h', 'k', 'r' }, { 'i', 'f', 'l', 'v' } };
-        String[] words = { "oath", "pea", "eat", "rain" };
+                {{'o', 'a', 'a', 'n'}, {'e', 't', 'a', 'e'}, {'i', 'h', 'k', 'r'}, {'i', 'f', 'l', 'v'}};
+        String[] words = {"oath", "pea", "eat", "rain"};
         System.out.println(findWords(board, words));
 
     }

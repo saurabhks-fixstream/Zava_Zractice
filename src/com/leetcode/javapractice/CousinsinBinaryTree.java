@@ -19,7 +19,7 @@ public class CousinsinBinaryTree {
     private static void dfs(TreeNode root, TreeNode par) {
         if (root != null) {
             depth.put(root.val, par != null ? 1 + depth.get(par.val)
-                                            : 0);
+                    : 0);
             parent.put(root.val, par);
             dfs(root.left, root);
             dfs(root.right, root);

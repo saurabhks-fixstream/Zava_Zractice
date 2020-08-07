@@ -18,12 +18,12 @@ public class NondecreasingArray {
             return false;
         }
         return index == 0 || index == nums.length - 2 || nums[index - 1] <= nums[index + 1]
-               || nums[index] <= nums[index + 2];
+                || nums[index] <= nums[index + 2];
     }
 
     public static void main(String[] args) {
 
-        int[] nums = { -1, 4, 2, 3 };
+        int[] nums = {-1, 4, 2, 3};
         System.out.println(checkPossibility(nums));
 
     }

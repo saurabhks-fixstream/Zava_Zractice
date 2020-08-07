@@ -30,7 +30,7 @@ public class CombinationSumIV {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 3 };
+        int[] nums = {1, 2, 3};
         System.out.println(combinationSum4(nums, 4));
 
     }

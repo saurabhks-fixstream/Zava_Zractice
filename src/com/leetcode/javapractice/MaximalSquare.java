@@ -5,7 +5,7 @@ public class MaximalSquare {
     public static int maximalSquare(char[][] matrix) {
         int m = matrix.length;
         int n = m > 0 ? matrix[0].length
-                      : 0;
+                : 0;
         int maxLen = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
@@ -40,8 +40,8 @@ public class MaximalSquare {
 
     public static void main(String[] args) {
 
-        char[][] matrix = { { '1', '0', '1', '0', '0' }, { '1', '0', '1', '1', '1' }, { '1', '1', '1', '1', '1' },
-                            { '1', '0', '0', '1', '0' } };
+        char[][] matrix = {{'1', '0', '1', '0', '0'}, {'1', '0', '1', '1', '1'}, {'1', '1', '1', '1', '1'},
+                {'1', '0', '0', '1', '0'}};
         System.out.println(maximalSquare(matrix));
 
     }

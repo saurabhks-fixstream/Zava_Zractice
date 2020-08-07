@@ -34,7 +34,7 @@ public class AddtoArrayFormofInteger {
 
     public static void main(String[] args) {
 
-        int[] A = { 1, 2, 0, 0 };
+        int[] A = {1, 2, 0, 0};
         System.out.println(addToArrayForm(A, 34));
 
     }

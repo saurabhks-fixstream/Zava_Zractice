@@ -16,7 +16,7 @@ public class RottingOranges {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (grid[i][j] == 2) {
-                    queue.offer(new int[] { i, j });
+                    queue.offer(new int[]{i, j});
                 } else if (grid[i][j] == 1) {
                     count_fresh++;
                 }
@@ -26,7 +26,7 @@ public class RottingOranges {
             return 0;
         }
         int count = 0;
-        int[][] dirs = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
+        int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
         while (!queue.isEmpty()) {
             ++count;
             int size = queue.size();
@@ -39,18 +39,18 @@ public class RottingOranges {
                         continue;
                     }
                     grid[x][y] = 2;
-                    queue.offer(new int[] { x, y });
+                    queue.offer(new int[]{x, y});
                     count_fresh--;
                 }
             }
         }
         return count_fresh == 0 ? count - 1
-                                : -1;
+                : -1;
     }
 
     public static void main(String[] args) {
 
-        int[][] grid = { { 2, 1, 1 }, { 1, 1, 0 }, { 0, 1, 1 } };
+        int[][] grid = {{2, 1, 1}, {1, 1, 0}, {0, 1, 1}};
         System.out.println(orangesRotting(grid));
 
     }

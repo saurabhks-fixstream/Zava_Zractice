@@ -18,25 +18,25 @@ public class RotatedDigits {
         while (N > 0) {
             int digit = N % 10;
             switch (digit) {
-            case 0:
-            case 1:
-            case 8:
-                sb.append(digit);
-                break;
-            case 2:
-                sb.append(5);
-                break;
-            case 5:
-                sb.append(2);
-                break;
-            case 6:
-                sb.append(9);
-                break;
-            case 9:
-                sb.append(6);
-                break;
-            default:
-                return false;
+                case 0:
+                case 1:
+                case 8:
+                    sb.append(digit);
+                    break;
+                case 2:
+                    sb.append(5);
+                    break;
+                case 5:
+                    sb.append(2);
+                    break;
+                case 6:
+                    sb.append(9);
+                    break;
+                case 9:
+                    sb.append(6);
+                    break;
+                default:
+                    return false;
             }
             N /= 10;
         }

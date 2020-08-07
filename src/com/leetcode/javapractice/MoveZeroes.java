@@ -22,7 +22,7 @@ public class MoveZeroes {
 
     public static void main(String[] args) {
 
-        int[] nums = { 0, 0, 1 };
+        int[] nums = {0, 0, 1};
         moveZeroes(nums);
         System.out.print("[");
         for (int i : nums) {

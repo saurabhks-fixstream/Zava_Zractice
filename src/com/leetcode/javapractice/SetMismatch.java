@@ -19,12 +19,12 @@ public class SetMismatch {
                 duplicate = i;
             }
         }
-        return new int[] { duplicate, missing };
+        return new int[]{duplicate, missing};
     }
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 2, 4 };
+        int[] nums = {1, 2, 2, 4};
         int[] result = findErrorNums(nums);
         for (int i : result) {
             System.out.print(i + " ");

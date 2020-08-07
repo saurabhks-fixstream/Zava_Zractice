@@ -8,7 +8,7 @@ public class CountCompleteTreeNodes {
             return 0;
         }
         return height(root.right) == height - 1 ? (1 << height) + countNodes(root.right)
-                                                : (1 << height - 1) + countNodes(root.left);
+                : (1 << height - 1) + countNodes(root.left);
     }
 
     private static int height(TreeNode root) {

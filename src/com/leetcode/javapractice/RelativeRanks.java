@@ -29,7 +29,7 @@ public class RelativeRanks {
 
     public static void main(String[] args) {
 
-        int[] nums = { 10, 3, 8, 9, 4 };
+        int[] nums = {10, 3, 8, 9, 4};
         String[] ranks = findRelativeRanks(nums);
         for (String s : ranks) {
             System.out.print(s + " ");

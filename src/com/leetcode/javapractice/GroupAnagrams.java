@@ -27,7 +27,7 @@ public class GroupAnagrams {
 
     public static void main(String[] args) {
 
-        String[] strs = { "eat", "tea", "tan", "ate", "nat", "bat" };
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
         List<List<String>> result = groupAnagrams(strs);
         for (List<String> list : result) {
             System.out.println(list);

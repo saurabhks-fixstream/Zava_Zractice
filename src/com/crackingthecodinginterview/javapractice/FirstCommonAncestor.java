@@ -15,7 +15,7 @@ public class FirstCommonAncestor {
             return root;
         }
         return (left_ca != null) ? left_ca
-                                 : right_ca;
+                : right_ca;
     }
 
     public static void main(String[] args) {

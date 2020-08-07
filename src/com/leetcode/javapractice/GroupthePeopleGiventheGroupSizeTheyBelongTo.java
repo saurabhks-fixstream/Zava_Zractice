@@ -28,7 +28,7 @@ public class GroupthePeopleGiventheGroupSizeTheyBelongTo {
 
     public static void main(String[] args) {
 
-        int[] groupSizes = { 3, 3, 3, 3, 3, 1, 3 };
+        int[] groupSizes = {3, 3, 3, 3, 3, 1, 3};
         System.out.println(groupThePeople(groupSizes));
 
     }

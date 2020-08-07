@@ -36,7 +36,7 @@ public class SorttheMatrixDiagonally {
 
     public static void main(String[] args) {
 
-        int[][] mat = { { 3, 3, 1, 1 }, { 2, 2, 1, 2 }, { 1, 1, 1, 2 } };
+        int[][] mat = {{3, 3, 1, 1}, {2, 2, 1, 2}, {1, 1, 1, 2}};
         diagonalSort(mat);
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[i].length; j++) {

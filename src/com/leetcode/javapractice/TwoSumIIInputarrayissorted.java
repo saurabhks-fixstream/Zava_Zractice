@@ -23,7 +23,7 @@ public class TwoSumIIInputarrayissorted {
 
     public static void main(String[] args) {
 
-        int[] numbers = { 2, 7, 11, 15, 19, 20 };
+        int[] numbers = {2, 7, 11, 15, 19, 20};
         int target = 27;
         int[] result = twoSum(numbers, target);
         System.out.print("[");

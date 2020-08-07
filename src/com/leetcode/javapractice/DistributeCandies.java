@@ -15,7 +15,7 @@ public class DistributeCandies {
 
     public static void main(String[] args) {
 
-        int[] candies = { 1, 1, 2, 2, 3, 3 };
+        int[] candies = {1, 1, 2, 2, 3, 3};
         System.out.println(distributeCandies(candies));
 
     }

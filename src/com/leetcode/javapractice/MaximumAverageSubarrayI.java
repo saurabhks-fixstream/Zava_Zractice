@@ -23,7 +23,7 @@ public class MaximumAverageSubarrayI {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 12, -5, -6, 50, 3 };
+        int[] nums = {1, 12, -5, -6, 50, 3};
         System.out.println(findMaxAverage(nums, 4));
 
     }

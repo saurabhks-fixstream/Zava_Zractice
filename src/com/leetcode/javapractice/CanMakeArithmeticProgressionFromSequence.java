@@ -17,7 +17,7 @@ public class CanMakeArithmeticProgressionFromSequence {
 
     public static void main(String[] args) {
 
-        int[] arr = { 3, 5, 1 };
+        int[] arr = {3, 5, 1};
         System.out.println(canMakeArithmeticProgression(arr));
 
     }

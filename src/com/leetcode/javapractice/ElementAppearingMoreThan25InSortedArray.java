@@ -21,7 +21,7 @@ public class ElementAppearingMoreThan25InSortedArray {
 
     public static void main(String[] args) {
 
-        int[] arr = { 1, 2, 2, 6, 6, 6, 6, 7, 10 };
+        int[] arr = {1, 2, 2, 6, 6, 6, 6, 7, 10};
         System.out.println(findSpecialInteger(arr));
 
     }

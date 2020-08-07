@@ -13,7 +13,7 @@ public class IntervalListIntersections {
             int lo = Math.max(A[i][0], B[j][0]);
             int hi = Math.min(A[i][1], B[j][1]);
             if (lo <= hi) {
-                ans.add(new int[] { lo, hi });
+                ans.add(new int[]{lo, hi});
             }
             if (A[i][1] < B[j][1]) {
                 i++;
@@ -26,8 +26,8 @@ public class IntervalListIntersections {
 
     public static void main(String[] args) {
 
-        int[][] A = { { 0, 2 }, { 5, 10 }, { 13, 23 }, { 24, 25 } };
-        int[][] B = { { 1, 5 }, { 8, 12 }, { 15, 24 }, { 25, 26 } };
+        int[][] A = {{0, 2}, {5, 10}, {13, 23}, {24, 25}};
+        int[][] B = {{1, 5}, {8, 12}, {15, 24}, {25, 26}};
         int[][] result = intervalIntersection(A, B);
         System.out.print("[");
         for (int[] r : result) {

@@ -27,8 +27,8 @@ public class SumofEvenNumbersAfterQueries {
 
     public static void main(String[] args) {
 
-        int[] A = { 1, 2, 3, 4 };
-        int[][] queries = { { 1, 0 }, { -3, 1 }, { -4, 0 }, { 2, 3 } };
+        int[] A = {1, 2, 3, 4};
+        int[][] queries = {{1, 0}, {-3, 1}, {-4, 0}, {2, 3}};
         int[] result = sumEvenAfterQueries(A, queries);
         for (int r : result) {
             System.out.print(r + " ");

@@ -18,15 +18,15 @@ public class ReorderDatainLogFiles {
                 return token1[0].compareTo(token2[0]);
             }
             return isDigit1 ? (isDigit2 ? 0
-                                        : 1)
-                            : -1;
+                    : 1)
+                    : -1;
         });
         return logs;
     }
 
     public static void main(String[] args) {
 
-        String[] logs = { "dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero" };
+        String[] logs = {"dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"};
         String[] result = reorderLogFiles(logs);
         for (String i : result) {
             System.out.print(i + " ");

@@ -17,7 +17,7 @@ public class FinalPricesWithaSpecialDiscountinaShop {
 
     public static void main(String[] args) {
 
-        int[] prices = { 8, 4, 6, 2, 3 };
+        int[] prices = {8, 4, 6, 2, 3};
         finalPrices(prices);
         for (int i : prices) {
             System.out.print(i + ", ");

@@ -10,7 +10,7 @@ public class DiameterofBinaryTree {
             return 0;
         }
         return Math.max(height(root.left) + height(root.right),
-                        Math.max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.right)));
+                Math.max(diameterOfBinaryTree(root.left), diameterOfBinaryTree(root.right)));
     }
 
     public static int height(TreeNode root) {

@@ -19,13 +19,13 @@ public class NumberofLinesToWriteString {
                 }
             }
         }
-        return new int[] { line, width };
+        return new int[]{line, width};
     }
 
     public static void main(String[] args) {
 
-        int[] widths = { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
-                         10, 10 };
+        int[] widths = {10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10,
+                10, 10};
         int[] result = numberOfLines(widths, "abcdefghijklmnopqrstuvwxyz");
         System.out.println("[" + result[0] + ", " + result[1] + "]");
 

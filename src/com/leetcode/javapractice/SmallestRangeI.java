@@ -18,7 +18,7 @@ public class SmallestRangeI {
 
     public static void main(String[] args) {
 
-        int[] A = { 1, 43, 223, 443, 22, 33, 223, 445, 4 };
+        int[] A = {1, 43, 223, 443, 22, 33, 223, 445, 4};
         System.out.println(smallestRangeI(A, 9));
 
     }

@@ -20,14 +20,14 @@ public class LastStoneWeightII {
                 return memo[index][sum + 3000];
             }
             memo[index][sum + 3000] = Math.min(lastStoneWeightIIHelper(stones, index + 1, sum + stones[index], memo),
-                                               lastStoneWeightIIHelper(stones, index + 1, sum - stones[index], memo));
+                    lastStoneWeightIIHelper(stones, index + 1, sum - stones[index], memo));
             return memo[index][sum + 3000];
         }
     }
 
     public static void main(String[] args) {
 
-        int[] stones = { 2, 7, 4, 1, 8, 1 };
+        int[] stones = {2, 7, 4, 1, 8, 1};
         System.out.println(lastStoneWeightII(stones));
 
     }

@@ -19,7 +19,7 @@ public class MeetingRooms {
 
     public static void main(String[] args) {
 
-        int[][] intervals = { { 0, 30 }, { 5, 10 }, { 15, 20 } };
+        int[][] intervals = {{0, 30}, {5, 10}, {15, 20}};
         System.out.println(canAttendMeetings(intervals));
 
     }

@@ -18,7 +18,7 @@ public class MaximumProductofTwoElementsinanArray {
 
     public static void main(String[] args) {
 
-        int[] nums = { 3, 4, 5, 2 };
+        int[] nums = {3, 4, 5, 2};
         System.out.println(maxProduct(nums));
 
     }

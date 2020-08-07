@@ -31,8 +31,8 @@ public class FairCandySwap {
 
     public static void main(String[] args) {
 
-        int[] A = { 1, 2, 5 };
-        int[] B = { 2, 4 };
+        int[] A = {1, 2, 5};
+        int[] B = {2, 4};
         int[] ans = fairCandySwap(A, B);
         System.out.println("[" + ans[0] + "," + ans[1] + "]");
 

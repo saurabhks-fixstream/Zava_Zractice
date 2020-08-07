@@ -56,7 +56,7 @@ public class BaseballGame {
 
     public static void main(String[] args) {
 
-        String[] ops = { "5", "2", "C", "D", "+" };
+        String[] ops = {"5", "2", "C", "D", "+"};
         System.out.println(calPoints(ops));
 
     }

@@ -15,9 +15,9 @@ public class ShortestPathinBinaryMatrix {
         }
         Queue<int[]> queue = new LinkedList<int[]>();
         boolean[][] visited = new boolean[n][n];
-        queue.offer(new int[] { 0, 0 });
+        queue.offer(new int[]{0, 0});
         visited[0][0] = true;
-        int[][] dirs = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 }, { 1, 1 }, { 1, -1 }, { -1, 1 }, { -1, -1 } };
+        int[][] dirs = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}, {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
         int count = 1;
         while (!queue.isEmpty()) {
             int size = queue.size();
@@ -32,7 +32,7 @@ public class ShortestPathinBinaryMatrix {
                     if (x < 0 || y < 0 || x >= n || y >= n || visited[x][y] || grid[x][y] == 1) {
                         continue;
                     }
-                    queue.offer(new int[] { x, y });
+                    queue.offer(new int[]{x, y});
                     visited[x][y] = true;
                 }
             }
@@ -43,7 +43,7 @@ public class ShortestPathinBinaryMatrix {
 
     public static void main(String[] args) {
 
-        int[][] grid = { { 0, 1 }, { 1, 0 } };
+        int[][] grid = {{0, 1}, {1, 0}};
         System.out.println(shortestPathBinaryMatrix(grid));
 
     }

@@ -37,7 +37,7 @@ public class CinemaSeatAllocation {
 
     public static void main(String[] args) {
 
-        int[][] reservedSeats = { { 1, 2 }, { 1, 3 }, { 1, 8 }, { 2, 6 }, { 3, 1 }, { 3, 10 } };
+        int[][] reservedSeats = {{1, 2}, {1, 3}, {1, 8}, {2, 6}, {3, 1}, {3, 10}};
         System.out.println(maxNumberOfFamilies(3, reservedSeats));
     }
 

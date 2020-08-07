@@ -27,7 +27,7 @@ public class StringCompression {
 
     public static void main(String[] args) {
 
-        char[] chars = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
+        char[] chars = {'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'};
         int length = compress(chars);
         for (int i = 0; i < length; i++) {
             System.out.print(chars[i] + " ");

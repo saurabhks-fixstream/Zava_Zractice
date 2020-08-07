@@ -33,8 +33,8 @@ public class ConstructBinaryTreefromInorderandPostorderTraversal {
 
     public static void main(String[] args) {
 
-        int[] inorder = { 9, 3, 15, 20, 7 };
-        int[] postorder = { 9, 15, 7, 20, 3 };
+        int[] inorder = {9, 3, 15, 20, 7};
+        int[] postorder = {9, 15, 7, 20, 3};
         TreeNode root = buildTree(inorder, postorder);
         System.out.println(BinaryTreeLevelOrderTraversal.levelOrder(root));
 

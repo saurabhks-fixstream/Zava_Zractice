@@ -22,12 +22,12 @@ public class ThirdMaximumNumber {
             }
         }
         return max3 == null ? max1
-                            : max3;
+                : max3;
     }
 
     public static void main(String[] args) {
 
-        int[] nums = { 3, 2, 1, 4, 5 };
+        int[] nums = {3, 2, 1, 4, 5};
         System.out.println(thirdMax(nums));
 
     }

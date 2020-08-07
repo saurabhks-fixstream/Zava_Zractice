@@ -21,7 +21,7 @@ public class RemoveElement {
 
     public static void main(String[] args) {
 
-        int[] nums = { 3, 2, 6, 3, 2, 5, 4, 6, 6, 6, 6, 6, 2, 3 };
+        int[] nums = {3, 2, 6, 3, 2, 5, 4, 6, 6, 6, 6, 6, 2, 3};
         int val = 6;
         int length = removeElement(nums, val);
         System.out.print("[ ");

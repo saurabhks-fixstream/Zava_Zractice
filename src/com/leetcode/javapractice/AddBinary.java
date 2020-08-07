@@ -9,14 +9,14 @@ public class AddBinary {
         int j = b.length() - 1;
         while (i >= 0 || j >= 0) {
             int d1 = i < 0 ? 0
-                           : a.charAt(i--) - '0';
+                    : a.charAt(i--) - '0';
             int d2 = j < 0 ? 0
-                           : b.charAt(j--) - '0';
+                    : b.charAt(j--) - '0';
             int sum = d1 + d2 + carry;
             if (sum > 1) {
                 carry = 1;
                 sb.append(sum == 2 ? "0"
-                                   : "1");
+                        : "1");
             } else {
                 carry = 0;
                 sb.append(sum);

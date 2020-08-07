@@ -30,7 +30,7 @@ public class DegreeofanArray {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 2, 2, 3, 1, 4, 2 };
+        int[] nums = {1, 2, 2, 3, 1, 4, 2};
         System.out.println(findShortestSubArray(nums));
 
     }

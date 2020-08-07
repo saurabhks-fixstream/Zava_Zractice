@@ -14,8 +14,8 @@ public class NumberofStudentsDoingHomeworkataGivenTime {
 
     public static void main(String[] args) {
 
-        int[] startTime = { 1, 2, 3 };
-        int[] endTime = { 3, 2, 7 };
+        int[] startTime = {1, 2, 3};
+        int[] endTime = {3, 2, 7};
         System.out.println(busyStudent(startTime, endTime, 4));
 
     }

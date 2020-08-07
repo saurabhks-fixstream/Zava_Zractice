@@ -39,7 +39,7 @@ public class PossibleBipartition {
 
     public static void main(String[] args) {
 
-        int[][] dislikes = { { 1, 2 }, { 1, 3 }, { 2, 4 } };
+        int[][] dislikes = {{1, 2}, {1, 3}, {2, 4}};
         System.out.println(possibleBipartition(4, dislikes));
 
     }

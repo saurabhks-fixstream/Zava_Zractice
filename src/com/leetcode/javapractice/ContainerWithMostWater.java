@@ -9,7 +9,7 @@ public class ContainerWithMostWater {
         while (i < j) {
             int min = 0;
             min = height[j] < height[i] ? height[j]
-                                        : height[i];
+                    : height[i];
             int temp = (j - i) * min;
             temp = Math.abs(temp);
             if (area <= temp) {
@@ -26,7 +26,7 @@ public class ContainerWithMostWater {
 
     public static void main(String[] args) {
 
-        int[] height = { 10, 9, 8, 7, 6, 5 };
+        int[] height = {10, 9, 8, 7, 6, 5};
         System.out.println(maxArea(height));
 
     }

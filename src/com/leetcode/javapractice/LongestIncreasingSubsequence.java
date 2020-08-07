@@ -24,7 +24,7 @@ public class LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
 
-        int[] nums = { 10, 9, 2, 5, 3, 4 };
+        int[] nums = {10, 9, 2, 5, 3, 4};
         System.out.println(lengthOfLIS(nums));
 
     }

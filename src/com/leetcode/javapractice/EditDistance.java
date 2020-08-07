@@ -29,8 +29,8 @@ public class EditDistance {
             return memo[m][n];
         }
         memo[m][n] = 1 + Math.min(minDistanceHelper(word1, word2, m, n - 1, memo),
-                                  Math.min(minDistanceHelper(word1, word2, m - 1, n, memo),
-                                           minDistanceHelper(word1, word2, m - 1, n - 1, memo)));
+                Math.min(minDistanceHelper(word1, word2, m - 1, n, memo),
+                        minDistanceHelper(word1, word2, m - 1, n - 1, memo)));
         return memo[m][n];
 
     }

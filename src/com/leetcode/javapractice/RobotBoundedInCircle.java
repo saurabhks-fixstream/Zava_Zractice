@@ -6,7 +6,7 @@ public class RobotBoundedInCircle {
         if (instructions == null || instructions.length() == 0) {
             return true;
         }
-        int dirs[][] = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
+        int dirs[][] = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int i = 0;
         int x = 0;
         int y = 0;

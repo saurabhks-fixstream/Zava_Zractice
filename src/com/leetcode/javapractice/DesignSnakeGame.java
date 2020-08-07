@@ -33,18 +33,18 @@ class SnakeGame {
         int x = body.peekFirst() / width;
         int y = body.peekFirst() % width;
         switch (direction) {
-        case "U":
-            x--;
-            break;
-        case "D":
-            x++;
-            break;
-        case "R":
-            y++;
-            break;
-        case "L":
-            y--;
-            break;
+            case "U":
+                x--;
+                break;
+            case "D":
+                x++;
+                break;
+            case "R":
+                y++;
+                break;
+            case "L":
+                y--;
+                break;
         }
         int head = x * width + y;
         set.remove(body.peekLast());
@@ -67,7 +67,7 @@ public class DesignSnakeGame {
 
     public static void main(String[] args) {
 
-        int[][] food = { { 1, 2 }, { 0, 1 } };
+        int[][] food = {{1, 2}, {0, 1}};
         SnakeGame snake = new SnakeGame(3, 2, food);
         System.out.println(snake.move("R"));
         System.out.println(snake.move("D"));

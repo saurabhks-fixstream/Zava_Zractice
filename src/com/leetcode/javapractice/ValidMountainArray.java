@@ -30,7 +30,7 @@ public class ValidMountainArray {
 
     public static void main(String[] args) {
 
-        int[] A = { 0, 3, 2, 1 };
+        int[] A = {0, 3, 2, 1};
         System.out.println(validMountainArray(A));
 
     }

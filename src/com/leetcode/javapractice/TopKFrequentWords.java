@@ -15,13 +15,13 @@ public class TopKFrequentWords {
         }
         List<String> result = new ArrayList<String>(map.keySet());
         Collections.sort(result, (w1, w2) -> map.get(w1).equals(map.get(w2)) ? w1.compareTo(w2)
-                                                                             : map.get(w2) - map.get(w1));
+                : map.get(w2) - map.get(w1));
         return result.subList(0, k);
     }
 
     public static void main(String[] args) {
 
-        String[] words = { "the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is" };
+        String[] words = {"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
         System.out.println(topKFrequent(words, 4));
 
     }

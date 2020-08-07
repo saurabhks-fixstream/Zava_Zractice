@@ -20,8 +20,8 @@ public class MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts {
 
     public static void main(String[] args) {
 
-        int[] horizontalCuts = { 1, 2, 4 };
-        int[] verticalCuts = { 1, 3 };
+        int[] horizontalCuts = {1, 2, 4};
+        int[] verticalCuts = {1, 3};
         System.out.println(maxArea(5, 4, horizontalCuts, verticalCuts));
 
     }

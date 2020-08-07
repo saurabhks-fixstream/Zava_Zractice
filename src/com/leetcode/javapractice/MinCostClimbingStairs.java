@@ -11,14 +11,14 @@ public class MinCostClimbingStairs {
         dp[1] = cost[1];
         for (int i = 2; i <= cost.length; i++) {
             dp[i] = Math.min(dp[i - 1], dp[i - 2]) + (i == cost.length ? 0
-                                                                       : cost[i]);
+                    : cost[i]);
         }
         return dp[cost.length];
     }
 
     public static void main(String[] args) {
 
-        int[] cost = { 10, 15, 20 };
+        int[] cost = {10, 15, 20};
         System.out.println(minCostClimbingStairs(cost));
 
     }

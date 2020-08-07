@@ -29,7 +29,7 @@ public class NextGreaterElementIII {
         Arrays.sort(digits, i, digits.length);
         long val = Long.valueOf(new String(digits));
         return val <= Integer.MAX_VALUE ? (int) val
-                                        : -1;
+                : -1;
     }
 
     public static void main(String[] args) {

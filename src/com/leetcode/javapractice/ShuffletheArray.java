@@ -17,7 +17,7 @@ public class ShuffletheArray {
 
     public static void main(String[] args) {
 
-        int[] nums = { 2, 5, 1, 3, 4, 7 };
+        int[] nums = {2, 5, 1, 3, 4, 7};
         int[] newNums = shuffle(nums, 3);
         for (int i : newNums) {
             System.out.print(i + ",");

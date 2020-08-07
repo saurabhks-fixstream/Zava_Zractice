@@ -28,7 +28,7 @@ public class SortArrayByParityII {
 
     public static void main(String[] args) {
 
-        int[] A = { 4, 2, 5, 7 };
+        int[] A = {4, 2, 5, 7};
         sortArrayByParityII(A);
         for (int i : A) {
             System.out.print(i + ",");

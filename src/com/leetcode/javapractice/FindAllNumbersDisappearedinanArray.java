@@ -26,7 +26,7 @@ public class FindAllNumbersDisappearedinanArray {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 1 };
+        int[] nums = {1, 1};
         List<Integer> list = findDisappearedNumbers(nums);
         System.out.print("[");
         for (int i : list) {

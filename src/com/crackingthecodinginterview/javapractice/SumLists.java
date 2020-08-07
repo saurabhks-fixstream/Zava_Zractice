@@ -9,9 +9,9 @@ public class SumLists {
         ListNode dummy = dummyHead;
         while (l1 != null || l2 != null) {
             int x = (l1 != null) ? l1.val
-                                 : 0;
+                    : 0;
             int y = (l2 != null) ? l2.val
-                                 : 0;
+                    : 0;
             sum = x + y + carry;
             carry = sum / 10;
             dummy.next = new ListNode(sum % 10);

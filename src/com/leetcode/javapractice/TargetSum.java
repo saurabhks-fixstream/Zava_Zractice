@@ -32,7 +32,7 @@ public class TargetSum {
 
     public static void main(String[] args) {
 
-        int[] nums = { 1, 1, 1, 1, 1 };
+        int[] nums = {1, 1, 1, 1, 1};
         int S = 3;
         System.out.println(findTargetSumWays(nums, S));
 

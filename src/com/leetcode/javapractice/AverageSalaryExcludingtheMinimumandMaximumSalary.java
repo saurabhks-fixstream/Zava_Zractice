@@ -17,7 +17,7 @@ public class AverageSalaryExcludingtheMinimumandMaximumSalary {
 
     public static void main(String[] args) {
 
-        int[] salary = { 4000, 3000, 1000, 2000 };
+        int[] salary = {4000, 3000, 1000, 2000};
         System.out.println(average(salary));
 
     }

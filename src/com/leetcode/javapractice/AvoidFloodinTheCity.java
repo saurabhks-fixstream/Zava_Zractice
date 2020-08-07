@@ -32,7 +32,7 @@ public class AvoidFloodinTheCity {
 
     public static void main(String[] args) {
 
-        int[] rains = { 1, 2, 3, 4 };
+        int[] rains = {1, 2, 3, 4};
         int[] result = avoidFlood(rains);
         for (int r : result) {
             System.out.print(r + " ");

@@ -40,7 +40,7 @@ public class SetMatrixZeroes {
 
     public static void main(String[] args) {
 
-        int[][] matrix = { { 0, 1, 2, 3 }, { 4, 5, 6, 7 }, { 8, 9, 0, 3 }, { 5, 2, 1, 1 } };
+        int[][] matrix = {{0, 1, 2, 3}, {4, 5, 6, 7}, {8, 9, 0, 3}, {5, 2, 1, 1}};
         setZeroes(matrix);
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {

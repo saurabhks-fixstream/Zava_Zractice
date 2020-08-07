@@ -18,7 +18,7 @@ public class CourseScheduleII {
         List<Integer> list = new ArrayList<Integer>();
         for (int i = 0; i < numCourses; i++) {
             if (dfs(graph, i, visited, visiting, list)) {
-                return new int[] {};
+                return new int[]{};
             }
         }
         int[] result = new int[numCourses];
@@ -50,7 +50,7 @@ public class CourseScheduleII {
 
     public static void main(String[] args) {
 
-        int[][] prerequisites = { { 1, 0 } };
+        int[][] prerequisites = {{1, 0}};
         int[] result = findOrder(2, prerequisites);
         for (int r : result) {
             System.out.print(r + " ");

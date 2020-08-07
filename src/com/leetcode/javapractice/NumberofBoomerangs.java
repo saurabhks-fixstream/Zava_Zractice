@@ -29,7 +29,7 @@ public class NumberofBoomerangs {
 
     public static void main(String[] args) {
 
-        int[][] points = { { 0, 0 }, { 1, 0 }, { 2, 0 } };
+        int[][] points = {{0, 0}, {1, 0}, {2, 0}};
         System.out.println(numberOfBoomerangs(points));
 
     }

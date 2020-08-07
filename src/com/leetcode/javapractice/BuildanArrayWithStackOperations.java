@@ -24,7 +24,7 @@ public class BuildanArrayWithStackOperations {
 
     public static void main(String[] args) {
 
-        int[] target = { 1, 3 };
+        int[] target = {1, 3};
         System.out.println(buildArray(target, 3));
 
     }

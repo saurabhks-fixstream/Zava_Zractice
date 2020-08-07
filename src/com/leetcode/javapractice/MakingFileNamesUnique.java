@@ -29,7 +29,7 @@ public class MakingFileNamesUnique {
 
     public static void main(String[] args) {
 
-        String[] names = { "pes", "fifa", "gta", "pes(2019)" };
+        String[] names = {"pes", "fifa", "gta", "pes(2019)"};
         String[] result = getFolderNames(names);
         for (String r : result) {
             System.out.print(r + " ");

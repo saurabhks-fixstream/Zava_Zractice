@@ -39,8 +39,8 @@ public class CompareStringsbyFrequencyoftheSmallestCharacter {
 
     public static void main(String[] args) {
 
-        String[] queries = { "bbb", "cc" };
-        String[] words = { "a", "aa", "aaa", "aaaa" };
+        String[] queries = {"bbb", "cc"};
+        String[] words = {"a", "aa", "aaa", "aaaa"};
         int[] ans = numSmallerByFrequency(queries, words);
         for (int i : ans) {
             System.out.print(i + ",");

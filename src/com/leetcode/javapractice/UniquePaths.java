@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class UniquePaths {
 
     public static int uniquePaths(int m, int n) {
-        int[][] dir = { { 0, 1 }, { 1, 0 } };
+        int[][] dir = {{0, 1}, {1, 0}};
         int[][] memo = new int[m + 1][n + 1];
         for (int[] mem : memo) {
             Arrays.fill(mem, -1);

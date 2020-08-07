@@ -14,12 +14,12 @@ public class FindSmallestLetterGreaterThanTarget {
             }
         }
         return start == letters.length ? letters[0]
-                                       : letters[start];
+                : letters[start];
     }
 
     public static void main(String[] args) {
 
-        char[] letters = { 'c', 'f', 'j' };
+        char[] letters = {'c', 'f', 'j'};
         System.out.println(nextGreatestLetter(letters, 'a'));
 
     }

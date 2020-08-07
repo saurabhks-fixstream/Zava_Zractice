@@ -22,7 +22,7 @@ public class ThekStrongestValuesinanArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
+        int[] arr = {1, 2, 3, 4, 5};
         int[] result = getStrongest(arr, 2);
         for (int i : result) {
             System.out.print(i + ",");

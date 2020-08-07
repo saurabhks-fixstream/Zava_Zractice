@@ -21,13 +21,13 @@ public class DesignBrowserHistory {
 
     public String back(int steps) {
         currentIdx = currentIdx - steps < 0 ? 0
-                                            : currentIdx - steps;
+                : currentIdx - steps;
         return websites.get(currentIdx);
     }
 
     public String forward(int steps) {
         currentIdx = currentIdx + steps >= websites.size() - 1 ? websites.size() - 1
-                                                               : currentIdx + steps;
+                : currentIdx + steps;
         return websites.get(currentIdx);
     }
 

@@ -13,7 +13,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
             if (!hm.containsKey(s.charAt(i))) {
                 count++;
                 longest = (longest > count ? longest
-                                           : count);
+                        : count);
                 hm.put(s.charAt(i), i);
             } else {
                 int k = hm.get(s.charAt(i));

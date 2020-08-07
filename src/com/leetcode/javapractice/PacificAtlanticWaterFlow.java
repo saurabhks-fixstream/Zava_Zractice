@@ -11,7 +11,7 @@ public class PacificAtlanticWaterFlow {
         if (matrix == null || matrix.length == 0) {
             return result;
         }
-        int[][] dir = { { 0, -1 }, { 0, 1 }, { 1, 0 }, { -1, 0 } };
+        int[][] dir = {{0, -1}, {0, 1}, {1, 0}, {-1, 0}};
         int m = matrix.length;
         int n = matrix[0].length;
         boolean[][] pacific = new boolean[m][n];
@@ -51,7 +51,7 @@ public class PacificAtlanticWaterFlow {
     public static void main(String[] args) {
 
         int[][] matrix =
-                { { 1, 2, 2, 3, 5 }, { 3, 2, 3, 4, 4 }, { 2, 4, 5, 3, 1 }, { 6, 7, 1, 4, 5 }, { 5, 1, 1, 2, 4 } };
+                {{1, 2, 2, 3, 5}, {3, 2, 3, 4, 4}, {2, 4, 5, 3, 1}, {6, 7, 1, 4, 5}, {5, 1, 1, 2, 4}};
         System.out.println(pacificAtlantic(matrix));
 
     }

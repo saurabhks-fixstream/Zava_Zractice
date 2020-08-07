@@ -35,7 +35,7 @@ public class RandomPickwithWeight {
 
     public static void main(String[] args) {
 
-        int[] w = { 1 };
+        int[] w = {1};
         RandomPickwithWeight r = new RandomPickwithWeight(w);
         System.out.println(r.pickIndex());
 

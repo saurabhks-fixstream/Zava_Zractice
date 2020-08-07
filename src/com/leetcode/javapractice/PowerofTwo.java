@@ -10,7 +10,7 @@ public class PowerofTwo {
             n /= 2;
         }
         return n == 1 ? true
-                      : false;
+                : false;
     }
 
     public static void main(String[] args) {

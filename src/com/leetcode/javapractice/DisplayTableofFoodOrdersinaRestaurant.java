@@ -42,8 +42,8 @@ public class DisplayTableofFoodOrdersinaRestaurant {
     public static void main(String[] args) {
 
         String[][] order =
-                { { "David", "3", "Ceviche" }, { "Corina", "10", "Beef Burrito" }, { "David", "3", "Fried Chicken" },
-                  { "Carla", "5", "Water" }, { "Carla", "5", "Ceviche" }, { "Rous", "3", "Ceviche" } };
+                {{"David", "3", "Ceviche"}, {"Corina", "10", "Beef Burrito"}, {"David", "3", "Fried Chicken"},
+                        {"Carla", "5", "Water"}, {"Carla", "5", "Ceviche"}, {"Rous", "3", "Ceviche"}};
         List<List<String>> orders = new ArrayList<List<String>>();
         for (String[] s : order) {
             List<String> list = new ArrayList<String>();

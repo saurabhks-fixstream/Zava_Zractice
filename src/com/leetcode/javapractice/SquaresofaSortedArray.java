@@ -20,7 +20,7 @@ public class SquaresofaSortedArray {
 
     public static void main(String[] args) {
 
-        int[] A = { -4, -1, 0, 3, 10 };
+        int[] A = {-4, -1, 0, 3, 10};
         A = sortedSquares(A);
         for (int a : A) {
             System.out.print(a + " ");
