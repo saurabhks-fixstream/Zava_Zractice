@@ -13,6 +13,6 @@ public class BrokenCalculator {
 
     public static void main(String[] args) {
 
-        System.out.println(brokenCalc(2,3));
+        System.out.println(brokenCalc(2, 3));
     }
 }
