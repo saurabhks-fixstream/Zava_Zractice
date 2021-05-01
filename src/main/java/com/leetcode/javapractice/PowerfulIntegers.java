@@ -1,24 +1,26 @@
 package com.leetcode.javapractice;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class PowerfulIntegers {
 
     public static List<Integer> powerfulIntegers(int x, int y, int bound) {
-        List<Integer> result = new ArrayList<Integer>();
-        int k = (int) Math.log10(bound) + 5;
-        for (int i = 0; i <= k; i++) {
-            for (int j = 0; j <= k; j++) {
-                int power = (int) (Math.pow(x, i) + Math.pow(y, j));
-                if (power <= bound && !result.contains(power)) {
-                    result.add(power);
+        Set<Integer> result = new HashSet<Integer>();
+        for (int a = 1; a < bound; a *= x) {
+            for (int b = 1; a + b <= bound; b *= y) {
+                result.add(a + b);
+                if (y == 1) {
+                    break;
                 }
             }
+            if (x == 1) {
+                break;
+            }
         }
-        Collections.sort(result);
-        return result;
+        return new ArrayList<Integer>(result);
     }
 
     public static void main(String[] args) {
