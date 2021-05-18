@@ -18,7 +18,7 @@ public class NumberofConnectedComponentsinanUndirectedGraph {
         return n;
     }
 
-    public static int find(int[] roots, int id) {
+    private static int find(int[] roots, int id) {
         while (roots[id] != id) {
             roots[id] = roots[roots[id]];
             id = roots[id];
