@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class FindandReplacePatternSolution {
+public class FindandReplacePattern {
 
     public static List<String> findAndReplacePattern(String[] words, String pattern) {
         int[] p = findAndReplacePatternHelper(pattern);
